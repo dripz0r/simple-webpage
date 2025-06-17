@@ -7,121 +7,134 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>📚 Build Your Own Website</h1>
-    <nav><a href="index.html">← Back Home</a></nav>
-  </header>
+  <div class="container">
+    <header>
+        <h1>📚 Build Your Own Website</h1>
+        <nav><a href="index.html">← Back Home</a></nav>
+    </header>
+    
+    <main>
+        <!-- New section: Web Trifecta -->
+        <section>
+        <h2>The Web Trifecta</h2>
+            <p>
+                Before we do anything fancy, remember:  
+                <strong>HTML</strong> builds the bones,  
+                <strong>CSS</strong> dresses it up,  
+                <strong>JavaScript</strong> makes it dance.
+            </p>
+        </section>
+        
+        <!-- Step 1: VS Code Install & Open -->
+        <section>
+        <h2>Step 1: Download & Open VS Code</h2>
+        <p>VS Code is your free code BFF—open-source and runs on Mac, Windows, or Linux.</p>
+        <ul>
+            <li><strong>Get VS Code:</strong> <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></li>
+        </ul>
+        <p>Once installed, open your project folder:</p>
+        <pre><code>cd /path/to/simple-website
+    code .
+    </code></pre>
+        <p><em>Note:</em> If the <code>code .</code> command doesn’t work, you can:</p>
+        <ul>
+            <li>Right‑click the <code>simple-website</code> folder &gt; “Open With” &gt; VS Code</li>
+            <li>In VS Code, go to <strong>File &gt; Open Folder…</strong> and select your project</li>
+        </ul>
+        </section>
 
-  <main>
-    <!-- Step 1: VS Code Install & Open -->
-    <section>
-      <h2>Step 1: Download & Open VS Code</h2>
-      <p>VS Code is your free code BFF—open-source and runs on Mac, Windows, or Linux.</p>
-      <ul>
-        <li><strong>Get VS Code:</strong> <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a></li>
-      </ul>
-      <p>Once installed, open your project folder:</p>
-      <pre><code>cd /path/to/simple-website
-code .
-</code></pre>
-      <p><em>Note:</em> If the <code>code .</code> command doesn’t work, you can:</p>
-      <ul>
-        <li>Right‑click the <code>simple-website</code> folder &gt; “Open With” &gt; VS Code</li>
-        <li>In VS Code, go to <strong>File &gt; Open Folder…</strong> and select your project</li>
-      </ul>
-    </section>
+        <!-- Step 2: Live Server Options -->
+        <section>
+        <h2>Step 2: Serve & Live-Reload Your Page</h2>
+        <h3>Option A: VS Code Live Server Extension</h3>
+        <ol>
+            <li>In VS Code, click the <strong>Extensions</strong> icon (or press <code>Ctrl+Shift+X</code> / <code>Cmd+Shift+X</code>).</li>
+            <li>Search for <strong>Live Server</strong> and click <strong>Install</strong>.</li>
+            <li>Open <code>tutorial.html</code>, then click <strong>Go Live</strong> in the bottom-right.</li>
+        </ol>
+        <p>Your browser opens <code>http://127.0.0.1:5500/tutorial.html</code> and auto-refreshes whenever you save.</p>
+        
+        <h3>Option B: Node.js “live-server” (No VS Code Required)</h3>
+        <p>If you have Node.js installed, run:</p>
+        <pre><code>npm install -g live-server
+    live-server
+    </code></pre>
+        <p>This serves your folder at <code>http://127.0.0.1:8080</code> with live reload on changes.</p>
+        </section>
 
-    <!-- Step 2: Live Server Options -->
-    <section>
-      <h2>Step 2: Serve & Live-Reload Your Page</h2>
-      <h3>Option A: VS Code Live Server Extension</h3>
-      <ol>
-        <li>In VS Code, click the <strong>Extensions</strong> icon (or press <code>Ctrl+Shift+X</code> / <code>Cmd+Shift+X</code>).</li>
-        <li>Search for <strong>Live Server</strong> and click <strong>Install</strong>.</li>
-        <li>Open <code>tutorial.html</code>, then click <strong>Go Live</strong> in the bottom-right.</li>
-      </ol>
-      <p>Your browser opens <code>http://127.0.0.1:5500/tutorial.html</code> and auto-refreshes whenever you save.</p>
-      
-      <h3>Option B: Node.js “live-server” (No VS Code Required)</h3>
-      <p>If you have Node.js installed, run:</p>
-      <pre><code>npm install -g live-server
-live-server
-</code></pre>
-      <p>This serves your folder at <code>http://127.0.0.1:8080</code> with live reload on changes.</p>
-    </section>
+        <!-- Step 3: Edit & Customize -->
+        <section>
+        <h2>Step 3: Edit, Tweak & Custom Layout</h2>
+        <p>Open <code>tutorial.html</code> and <code>style.css</code> in your editor. Here are some quick examples:</p>
+        <h4>Change the header background:</h4>
+        <pre><code>/* In style.css */
+    header {
+    background-color: #ffeb3b;
+    padding: 20px;
+    }
+    </code></pre>
+        <h4>Add a new section to your HTML:</h4>
+        <pre><code>&lt;section&gt;
+    &lt;h2&gt;My Custom Section&lt;/h2&gt;
+    &lt;p&gt;This is my new content!&lt;/p&gt;
+    &lt;/section&gt;
+    </code></pre>
+        <p>Save (<code>Ctrl+S</code> / <code>Cmd+S</code>) and watch it live update.</p>
+        </section>
 
-    <!-- Step 3: Edit & Customize -->
-    <section>
-      <h2>Step 3: Edit, Tweak & Custom Layout</h2>
-      <p>Open <code>tutorial.html</code> and <code>style.css</code> in your editor. Here are some quick examples:</p>
-      <h4>Change the header background:</h4>
-      <pre><code>/* In style.css */
-header {
-  background-color: #ffeb3b;
-  padding: 20px;
-}
-</code></pre>
-      <h4>Add a new section to your HTML:</h4>
-      <pre><code>&lt;section&gt;
-  &lt;h2&gt;My Custom Section&lt;/h2&gt;
-  &lt;p&gt;This is my new content!&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-      <p>Save (<code>Ctrl+S</code> / <code>Cmd+S</code>) and watch it live update.</p>
-    </section>
+        <!-- Step 4: GitHub & README -->
+        <section>
+        <h2>Step 4: Clone & Follow the GitHub Repo</h2>
+        <p>Grab the full code and follow along on GitHub:</p>
+        <ul>
+            <li><a href="https://github.com/dripz0r/simple-website/tree/tutorial" target="_blank">
+                GitHub: dripz0r/simple-website (branch <code>tutorial</code>)
+            </a>
+            </li>
+        </ul>
+        <p>Clone it locally:</p>
+        <pre><code>git clone -b tutorial https://github.com/dripz0r/simple-website.git
+    cd simple-website
+    </code></pre>
+        <p>Open the <code>README.md</code> for extra snippets and notes to help you edit.</p>
+        </section>
 
-    <!-- Step 4: GitHub & README -->
-    <section>
-      <h2>Step 4: Clone & Follow the GitHub Repo</h2>
-      <p>Grab the full code and follow along on GitHub:</p>
-      <ul>
-        <li><a href="https://github.com/dripz0r/simple-website/tree/tutorial" target="_blank">
-            GitHub: dripz0r/simple-website (branch <code>tutorial</code>)
-          </a>
-        </li>
-      </ul>
-      <p>Clone it locally:</p>
-      <pre><code>git clone -b tutorial https://github.com/dripz0r/simple-website.git
-cd simple-website
-</code></pre>
-      <p>Open the <code>README.md</code> for extra snippets and notes to help you edit.</p>
-    </section>
+        <!-- Step 5: More Tutorials & TL;DR -->
+        <section>
+        <h2>Step 5: Explore More & TL;DR</h2>
+        <p>Want more deep dives? Drop by these tutorials:</p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web" target="_blank">
+                MDN: Getting started with the web
+                </a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank">
+                W3Schools: HTML Tutorial
+                </a></li>
+            <li><a href="https://chat.openai.com/" target="_blank">
+                ChatGPT Playground: Generate boilerplate in minutes
+                </a></li>
+        </ul>
+        <p><strong>TL;DR:</strong> Paste your HTML &amp; CSS into an AI builder and get a working page in 2 minutes.</p>
+        </section>
 
-    <!-- Step 5: More Tutorials & TL;DR -->
-    <section>
-      <h2>Step 5: Explore More & TL;DR</h2>
-      <p>Want more deep dives? Drop by these tutorials:</p>
-      <ul>
-        <li><a href="https://developer.mozilla.org/docs/Learn/Getting_started_with_the_web" target="_blank">
-              MDN: Getting started with the web
-            </a></li>
-        <li><a href="https://www.w3schools.com/html/" target="_blank">
-              W3Schools: HTML Tutorial
-            </a></li>
-        <li><a href="https://chat.openai.com/" target="_blank">
-              ChatGPT Playground: Generate boilerplate in minutes
-            </a></li>
-      </ul>
-      <p><strong>TL;DR:</strong> Paste your HTML &amp; CSS into an AI builder and get a working page in 2 minutes.</p>
-    </section>
+        <!-- Step 6: Design Tips -->
+        <section>
+        <h2>Step 6: Style Tips & Next Moves</h2>
+        <ul>
+            <li><strong>Colors:</strong> One background, one text, one accent for a clean look.</li>
+            <li><strong>Fonts:</strong> Stick to sans-serif for modern simplicity.</li>
+            <li><strong>Spacing:</strong> Use <code>margin</code> and <code>padding</code> so elements breathe.</li>
+            <li><strong>Extra pages:</strong> Copy <code>tutorial.html</code> as <code>page2.html</code> and update links for more content.</li>
+        </ul>
+        <p>Now you’ve got a thorough, friendly guide—no training wheels, but plenty of hand-holding! 🚀</p>
+        </section>
+    </main>
+    
+    <footer>
+        <small>© 2025 Your Name</small>
+    </footer>
+</div>
 
-    <!-- Step 6: Design Tips -->
-    <section>
-      <h2>Step 6: Style Tips & Next Moves</h2>
-      <ul>
-        <li><strong>Colors:</strong> One background, one text, one accent for a clean look.</li>
-        <li><strong>Fonts:</strong> Stick to sans-serif for modern simplicity.</li>
-        <li><strong>Spacing:</strong> Use <code>margin</code> and <code>padding</code> so elements breathe.</li>
-        <li><strong>Extra pages:</strong> Copy <code>tutorial.html</code> as <code>page2.html</code> and update links for more content.</li>
-      </ul>
-      <p>Now you’ve got a thorough, friendly guide—no training wheels, but plenty of hand-holding! 🚀</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <small>© 2025 Your Name</small>
-  </footer>
 </body>
 </html>
  
