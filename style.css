@@ -1,10 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 2rem;
-    background-color: #f0f0f0;
-    color: #333;
+:root {
+    --bg: #121212;
+    --fg: #e0e0e0;
+    --accent: #bb86fc;
+    --card-bg: #1e1e1e;
+    --shadow: rgba(0, 0, 0, 0.5);
   }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow);
+  }
+  
   header h1 {
-    color: #2c3e50;
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--accent);
+    text-align: center;
+  }
+  
+  nav {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1rem;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .main-content p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #888;
   }
   
